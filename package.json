@@ -11,6 +11,7 @@
     }
   },
   "scripts": {
+    "start": "python3 -m http.server",
     "build": "vladislav",
     "watch": "npm-watch"
   },
