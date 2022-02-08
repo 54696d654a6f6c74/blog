@@ -1,0 +1,8 @@
+{
+ "file_ext": "vlad",
+ "output_dir": "vlad_out",
+ "output_ext": "html",
+ "except_dir": ["./templates"],
+ "except_path": [],
+ "except_filename": []
+}

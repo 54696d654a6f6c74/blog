@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- include ./templates/head.vlad -->
+        <script type="module" src="../js/index.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <!-- include ./templates/nav.vlad -->
+        </header>
+
+        <article>
+            <span id="article-title" class="anchor">
+            </span>
+            <span id="article-date">
+            </span>
+            <div id="article-main">
+            </div>
+        </article>
+
+        <a href="#article-title"> Back to title </a>
+        <br />
+
+    </body>
+<html>

@@ -1,0 +1,27 @@
+@import url("nav.css");
+@import url("article.css");
+
+/* Define minimum font size */
+html {
+    font-size: 1.5em;
+    color: #eeeeee;
+    scroll-behavior: smooth;
+}
+/* --- */
+
+/* General rule for the design */
+body{
+    font-family: sans-serif;
+    background-color: #222831;
+}
+
+a{
+    text-decoration: underline;
+    color: #eeeeee;
+}
+
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 0.95em;
+    }
+}

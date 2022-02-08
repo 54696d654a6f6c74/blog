@@ -1,0 +1,51 @@
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #222831;
+    top: 0px;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 5px 5px #111;
+    padding: 0.2em 0px 0.2em 0px;
+}
+
+@media screen and (max-width: 370px) {
+    html{
+        font-size: 0.95em;
+    }
+}
+
+.nav-btn{
+    text-decoration: none;
+    margin-inline: 0.25vw;
+    padding: 0.25em;
+    padding-inline: 2vw;
+    color: #eeeeee;
+    border: solid;
+    border-radius: 2mm;
+    border-width: 2px;
+}
+
+.nav-btn:hover{
+    background: #d65a31;
+}
+
+@media screen and (max-width: 480px){
+    nav{
+        flex-flow: column;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .nav-btn{
+        text-align: center;
+        margin: 0.2em 0 0.2em 0;
+    }
+}
+
+@media screen and (max-height: 480px) and (min-width: 480px){
+    nav{
+        position: absolute;
+    }
+}

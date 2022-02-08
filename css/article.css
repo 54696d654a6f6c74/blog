@@ -1,0 +1,19 @@
+article{
+    display: block;
+    margin: 3.5em 2vh 2vh 2vh;
+}
+
+.anchor{
+    padding-top: 3.5em;
+    margin-top: -3.5em;
+}
+
+@media screen and (max-width: 480px) {
+    article{
+        margin: 5% 5% 5vh 5%;
+    }
+    .anchor{
+        padding-top: 5%;
+        margin-top: -5%;
+    }
+}

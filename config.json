@@ -1,0 +1,42 @@
+{
+    "data_root": "./data",
+    "models": {
+        "post": {
+            "route": "posts",
+            "data_handler": "filesys",
+            "behaviors": {
+                "init": {
+                    "header_file": "header",
+                    "fields": [
+                        "header",
+                        "content",
+                        "md"
+                    ]
+                },
+                "containers": {
+                    "normal": {
+                        "names": [
+                            "Pageable",
+                            "Login"
+                        ],
+                        "init": {
+                            "page_size": 5
+                        }
+                    },
+                    "auth": {
+                        "names": [
+                            "Postable",
+                            "Deleteable",
+                            "Updateable"
+                        ],
+                        "middleware": {
+                            "basic_auth": {
+                                "admin_file_path": "./admin.json"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
