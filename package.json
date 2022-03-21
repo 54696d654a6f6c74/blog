@@ -5,7 +5,7 @@
   "main": "index.js",
   "watch": {
     "build": {
-      "patterns": "",
+      "patterns": "**",
       "extensions": "vlad",
       "silent": false
     }

@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- include ./templates/head.vlad -->
-        <script type="module" src="../js/index.js"></script>
+        <script type="module" src="../js/pages/index.js"></script>
     </head>
     <body>
 

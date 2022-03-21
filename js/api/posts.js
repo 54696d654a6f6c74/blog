@@ -1,8 +1,8 @@
-import { Tag, Injector } from "../node_modules/@54696d654a6f6c74/html-injector/dist/lib.js";
+import { Tag, Injector } from "../../node_modules/@54696d654a6f6c74/html-injector/dist/lib.js";
 
 import { get_url } from "./fetch.js";
 
-const posts_url = "http://127.0.0.1:5000/posts/";
+const posts_url = "http://127.0.0.1:5000/posts";
 
 function post_content_template(content)
 {
@@ -25,9 +25,20 @@ function post_date_template(date)
     );
 }
 
+export async function load_posts()
+{
+    const posts = await get_url(posts_url);
+
+    let injections = [];
+    for (let post of posts.headers)
+        injections.push(post_title_template(post.title))
+    
+    return await Injector.bindHTML(injections, "article-title")
+}
+
 export async function load_post(post_id)
 {
-    const post = await get_url(posts_url + post_id);
+    const post = await get_url(`${posts_url}/${post_id}`);
 
     const targets = ["article-title", "article-date", "article-main"];
     const injections = [
