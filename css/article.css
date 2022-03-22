@@ -29,8 +29,13 @@ article{
 
 .article-link-button{
     text-decoration: none;
-    display: inline-block;
-    width: 98%;
+    display: inline-flex;
+    width: 96%;
     padding: 10px;
     margin-left: 1%;
+    margin-right: 1%;
+}
+
+.article-heading-data{
+    width: 100%;
 }

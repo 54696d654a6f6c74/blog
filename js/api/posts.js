@@ -17,7 +17,11 @@ export async function load_posts()
 
     let injections = [];
     for (let i in posts.indices)
-        injections.push(post_heading_button(posts.indices[i], posts.headers[i].title));
+        injections.push(post_heading_button(
+            posts.indices[i],
+            posts.headers[i].title,
+            posts.headers[i].date
+        ));
     
     return await Injector.bindHTML(injections, "article-titles")
 }

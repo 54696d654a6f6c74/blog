@@ -29,6 +29,10 @@ a{
     color: #eeeeee;
 }
 
+.align-right{
+    text-align: right;
+}
+
 @media screen and (max-width: 480px) {
     html{
         font-size: 0.95em;

@@ -21,11 +21,18 @@ export function post_date_template(date)
     );
 }
 
-export function post_heading_button(index, heading)
+export function post_heading_button(index, heading, date)
 {
     return [
         new Tag(
-            "a", heading, [
+            "a", [
+                new Tag(
+                    "span", heading , [new Attribute("class", "article-heading-data")]
+                ),
+                new Tag(
+                    "span", date, [new Attribute("class", "article-heading-data align-right")]
+                )
+            ], [
                 new Attribute("class", "article-link-button"),
                 new Attribute("href", './post.html'),
                 new Attribute("onclick",
