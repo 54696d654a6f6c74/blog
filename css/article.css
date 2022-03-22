@@ -19,5 +19,18 @@ article{
 }
 
 #article-titles{
-    margin-top: 100px;
+    display: block;
+    margin: 3.5em 2vh 2vh 2vh;
+}
+
+.article-link-button:hover{
+    background-color: #d65a31;
+}
+
+.article-link-button{
+    text-decoration: none;
+    display: inline-block;
+    width: 98%;
+    padding: 10px;
+    margin-left: 1%;
 }

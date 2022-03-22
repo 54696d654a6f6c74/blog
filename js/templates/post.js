@@ -23,15 +23,13 @@ export function post_date_template(date)
 
 export function post_heading_button(index, heading)
 {
-    return new Tag(
-        "span", [
-            new Tag(
-                "a", heading, [
-                    new Attribute("href", './post.html'),
-                    new Attribute("onclick",
-                        () => localStorage["selectedArticle"] = index)]),
-            new Tag(
-                "br", '')
-            ]
-    );
+    return [
+        new Tag(
+            "a", heading, [
+                new Attribute("class", "article-link-button"),
+                new Attribute("href", './post.html'),
+                new Attribute("onclick",
+                    () => localStorage["selectedArticle"] = index)]),
+        new Tag("br", '')
+    ];
 }
