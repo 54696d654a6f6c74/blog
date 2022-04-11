@@ -16,8 +16,7 @@
                 "containers": {
                     "normal": {
                         "names": [
-                            "Pageable",
-                            "Login"
+                            "Pageable"
                         ],
                         "init": {
                             "page_size": 5
