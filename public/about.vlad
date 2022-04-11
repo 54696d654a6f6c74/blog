@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- include ./templates/head.vlad -->
+    </head>
+    <body>
+
+        <header>
+            <!-- include ./templates/nav.vlad -->
+        </header>
+
+    </body>
+<html>

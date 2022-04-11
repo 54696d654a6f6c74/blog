@@ -25,6 +25,7 @@ article{
 
 .article-link-button:hover{
     background-color: #d65a31;
+    box-shadow: 0px 5px 5px #111;
 }
 
 .article-link-button{
